@@ -1,12 +1,12 @@
 function showMeme() {
     // Value is a string representing image URL
     const randomMemeUrl = getRandomData('memes');
-    const contentBar = document.getElementsByClassName("content");
+    const contentBar = document.querySelector('.content');
     const imageElement = document.createElement('img');
 
     addAttribute('src', randomMemeUrl, imageElement);
 
-    contentBar[0].parentNode.insertBefore(imageElement, contentBar[0]);
+    contentBar.appendChild(imageElement);
   }
 
   function addAttribute(name, value, element) {
@@ -15,6 +15,7 @@ function showMeme() {
     element.setAttributeNode(newAttribute);
   }
   
+
   function getRandomData(type) {
     return data[type][rn(data[type].length)];
   }
