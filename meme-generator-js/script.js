@@ -2,6 +2,9 @@ function showMeme() {
     // Value is a string representing image URL
     const randomMemeUrl = getRandomData('memes');
     const contentBar = document.querySelector('.content');
+    
+    if (contentBar.children.length > 0) {clearAll();}
+
     const imageElement = document.createElement('img');
 
     addAttribute('src', randomMemeUrl, imageElement);
@@ -13,6 +16,11 @@ function showMeme() {
     const newAttribute = document.createAttribute(name);
     newAttribute.value = value;
     element.setAttributeNode(newAttribute);
+  }
+
+  function clearAll() {
+    const contentBar = document.querySelector('.content');
+    contentBar.replaceChildren();
   }
   
 
