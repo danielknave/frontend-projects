@@ -2,31 +2,44 @@ function showMeme() {
     // Value is a string representing image URL
     const randomMemeUrl = getRandomData('memes');
     const contentBar = document.querySelector('.content');
-    
+
     if (contentBar.children.length > 0) {clearAll();}
 
     const imageElement = document.createElement('img');
-
     addAttribute('src', randomMemeUrl, imageElement);
 
     contentBar.appendChild(imageElement);
+}
+
+function showJoke() {
+    // Value is a string representing the joke
+    const randomJokeText = getRandomData('jokes');
+    const contentBar = document.querySelector('.content');
+
+    if (contentBar.children.length > 0) {clearAll();}
+
+    const pElement = document.createElement('p');
+    const textNode = document.createTextNode(randomJokeText);
+    
+    pElement.appendChild(textNode);
+    contentBar.appendChild(pElement);
   }
 
-  function addAttribute(name, value, element) {
+function addAttribute(name, value, element) {
     const newAttribute = document.createAttribute(name);
     newAttribute.value = value;
     element.setAttributeNode(newAttribute);
-  }
+}
 
-  function clearAll() {
+function clearAll() {
     const contentBar = document.querySelector('.content');
     contentBar.replaceChildren();
-  }
+}
   
 
-  function getRandomData(type) {
+function getRandomData(type) {
     return data[type][rn(data[type].length)];
-  }
+}
 
 // Source: https://www.thecoderpedia.com/blog/programming-memes/, Reddit
 const memes = ['https://i.redd.it/a0v87gwzoge61.jpg', 'https://i.redd.it/q29egav34ee61.jpg', 'https://i.redd.it/iij16swxjie61.jpg', 'https://i.redd.it/vek7dm2hrge61.jpg', 'https://www.testbytes.net/wp-content/uploads/2019/06/Untitled-8.png', 'https://miro.medium.com/max/1000/0*Ua695vjzFHV6VNOX.png', 'https://pbs.twimg.com/media/EKkPagPXkAA__Qo.jpg', 'https://code-love.com/wp-content/uploads/2019/03/download.jpeg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes-Programmer-while-sleeping.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes-Evolution-of-Memory-Storage-1024x996.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes-Error-in-Code-896x1024.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Coding-Meme-Code-Comments-be-Like-925x1024.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Internet-Explorer-Joke-915x1024.jpg'];
