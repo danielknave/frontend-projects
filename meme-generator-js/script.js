@@ -19,3 +19,18 @@ const quotes = [
   { quote: 'Everyone knows that debugging is twice as hard as writing a program in the first place. So if you\'re as clever as you can be when you write it, how will you ever debug it?', author: 'Brian Kernighan' },
   { quote: 'No matter which field of work you want to go in, it is of great importance to learn at least one programming language.', author: 'Ram Ray' },
 ];
+
+function getRandomData(type) {
+    return data[type][rn(data[type].length)];
+  }
+
+  function rn(len) {
+    return Math.floor(Math.random() * len);
+  }
+  
+  const data = {
+    memes,
+    jokes,
+    quotes,
+    riddles
+  };
