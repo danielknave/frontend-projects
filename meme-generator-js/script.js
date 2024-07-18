@@ -18,12 +18,27 @@ function showJoke() {
 
     if (contentBar.children.length > 0) {clearAll();}
 
-    const pElement = document.createElement('p');
-    const textNode = document.createTextNode(randomJokeText);
-    
-    pElement.appendChild(textNode);
-    contentBar.appendChild(pElement);
+    contentBar.appendChild(newTextNode(randomJokeText, 'p'));
   }
+
+function showQuote() {
+    // Value should be in format: { quote: '', author: '' }
+    const randomQuote = getRandomData('quotes');
+    const contentBar = document.querySelector('.content');
+
+    if (contentBar.children.length > 0) {clearAll();}
+
+    contentBar.appendChild(newTextNode(randomQuote.quote, 'h4'));
+    contentBar.appendChild(newTextNode(randomQuote.author, 'p'));
+
+}
+
+function newTextNode(text, elementType) {
+    const textElement = document.createElement(elementType);
+    const textNode = document.createTextNode(text);
+    textElement.appendChild(textNode);
+    return textElement;
+}
 
 function addAttribute(name, value, element) {
     const newAttribute = document.createAttribute(name);
