@@ -4,17 +4,17 @@ function showMeme() {
     const contentBar = document.getElementsByClassName("content");
     const imageElement = document.createElement('img');
 
-    const sourceAttributeNode = document.createAttribute('src');
-    sourceAttributeNode.value = randomMemeUrl;
-    imageElement.setAttributeNode(sourceAttributeNode);
-
-    const widthAttributeNode = document.createAttribute('width');
-    widthAttributeNode.value = 300;
-    imageElement.setAttributeNode(widthAttributeNode);
+    addAttribute('src', randomMemeUrl, imageElement);
 
     contentBar[0].parentNode.insertBefore(imageElement, contentBar[0]);
   }
 
+  function addAttribute(name, value, element) {
+    const newAttribute = document.createAttribute(name);
+    newAttribute.value = value;
+    element.setAttributeNode(newAttribute);
+  }
+  
   function getRandomData(type) {
     return data[type][rn(data[type].length)];
   }
