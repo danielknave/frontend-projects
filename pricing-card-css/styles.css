@@ -49,7 +49,6 @@ main > div {
 
 .left-block, .right-block {
     flex: 50%;
-    flex-direction: row;
     border: 1px solid black; /*to be removed*/
     padding: 30px;
 }
@@ -60,6 +59,15 @@ main > div {
 
 .right-block {
     background-color: #4ABEBD;
+}
+
+button {
+    background-color: #BFDF32;
+    color:#FFFFFF;
+    width: 100%;
+    height: 25%;
+    font-family: "Karla";
+    font-size: 1em;
 }
 
 #top-header {
@@ -86,6 +94,7 @@ main > div {
 #description {
     margin-bottom: 15px;
     color: #FFFFFF;
+    font-size: 0.95em;
 }
 
 #right-header {
