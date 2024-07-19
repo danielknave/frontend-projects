@@ -16,6 +16,7 @@ ul {
 
 body {
     display: flex;
+    background-color: #F1F1F1;
 }
 
 main {
@@ -33,6 +34,7 @@ main > div {
     padding-right: 30px;
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: #FFFFFF;
 }
 
 .bottom-block {
@@ -44,6 +46,14 @@ main > div {
     flex-direction: row;
     border: 1px solid black; /*to be removed*/
     padding: 30px;
+}
+
+.left-block {
+    background-color: #2CB2B3;
+}
+
+.right-block {
+    background-color: #4ABEBD;
 }
 
 #top-header {
