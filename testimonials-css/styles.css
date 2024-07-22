@@ -46,7 +46,7 @@ main {
     border-radius: 8px;
 }
 
-img {
+.userpic {
     border-radius: 40px;
     width: 25px;
     height: 25px;
@@ -82,6 +82,13 @@ img {
 #top-left {
     background-color: hsl(263, 55%, 52%);
     color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+#top-left > .short-testimony,
+#top-left > .nametag {
+    position: relative;
+    z-index: 2;
 }
 
 #top-right {
@@ -97,4 +104,13 @@ img {
 #bot-right {
     background-color: hsl(219, 29%, 14%);
     color: hsl(0, 0%, 100%);
+}
+
+#quotation-pic {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    right: 20%;
+    top: 0;
 }
