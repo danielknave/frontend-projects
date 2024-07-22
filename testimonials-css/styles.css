@@ -53,17 +53,9 @@ main {
     color: hsl(0, 0%, 100%);
 }
 
-#top-left > .long-testimony {
-    opacity: 70%;
-}
-
 #top-right {
     background-color: hsl(217, 19%, 35%);
     color: hsl(0, 0%, 100%);
-}
-
-#top-right > .long-testimony {
-    opacity: 70%;
 }
 
 #bot-left {
@@ -71,19 +63,10 @@ main {
     color: hsl(0, 0%, 0%);
 }
 
-#bot-left > .long-testimony {
-    opacity: 70%;
-}
-
 #bot-right {
     background-color: hsl(219, 29%, 14%);
     color: hsl(0, 0%, 100%);
 }
-
-#bot-right > .long-testimony {
-    opacity: 70%;
-}
-
 img {
     border-radius: 40px;
     width: 25px;
@@ -110,4 +93,9 @@ img {
 .short-testimony {
     font-size: 1.5em;
     margin-bottom: 20px;
+}
+
+.long-testimony {
+    line-height: 135%;
+    opacity: 70%
 }
