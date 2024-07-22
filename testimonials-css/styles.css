@@ -23,14 +23,6 @@ main {
     color: hsl(0, 0%, 0%);
 }
 
-#vertical > .description {
-    opacity: 50%;
-}
-
-#vertical > .long-testimony {
-    opacity: 70%;
-}
-
 .horizontal {
     flex-basis: 75%;
     display: flex;
@@ -41,11 +33,43 @@ main {
     display: flex;
 }
 
-
 .testimony {
     padding: 35px;
     margin: 15px;
     border-radius: 8px;
+}
+
+img {
+    border-radius: 40px;
+    width: 25px;
+    height: 25px;
+}
+
+.testimony-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.nametag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    font-size: 0.8em;
+}
+
+.description {
+    opacity: 50%;
+}
+
+.short-testimony {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.long-testimony {
+    line-height: 135%;
+    opacity: 70%
 }
 
 #top-left {
@@ -66,36 +90,4 @@ main {
 #bot-right {
     background-color: hsl(219, 29%, 14%);
     color: hsl(0, 0%, 100%);
-}
-img {
-    border-radius: 40px;
-    width: 25px;
-    height: 25px;
-}
-
-.testimony-header {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.nametag {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 15px;
-    font-size: 0.8em;
-}
-
-.nametag > .description {
-    opacity: 50%;
-}
-
-.short-testimony {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-.long-testimony {
-    line-height: 135%;
-    opacity: 70%
 }
