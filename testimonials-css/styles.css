@@ -6,6 +6,10 @@ html {
     background-color: hsl(210, 46%, 95%);
 }
 
+p {
+    margin: 0;
+}
+
 main {
     display: flex;
     max-width: 88%;
@@ -39,16 +43,14 @@ main {
 
 
 .testimony {
-    padding: 20px;
+    padding: 40px;
+    margin: 10px;
+    border-radius: 8px;
 }
 
 #top-left {
     background-color: hsl(263, 55%, 52%);
     color: hsl(0, 0%, 100%);
-}
-
-#top-left > .description {
-    opacity: 50%;
 }
 
 #top-left > .long-testimony {
@@ -60,10 +62,6 @@ main {
     color: hsl(0, 0%, 100%);
 }
 
-#top-right > .description {
-    opacity: 50%;
-}
-
 #top-right > .long-testimony {
     opacity: 70%;
 }
@@ -71,10 +69,6 @@ main {
 #bot-left {
     background-color: hsl(0, 0%, 100%);
     color: hsl(0, 0%, 0%);
-}
-
-#bot-left > .description {
-    opacity: 50%;
 }
 
 #bot-left > .long-testimony {
@@ -86,10 +80,34 @@ main {
     color: hsl(0, 0%, 100%);
 }
 
-#bot-right > .description {
+#bot-right > .long-testimony {
+    opacity: 70%;
+}
+
+img {
+    border-radius: 40px;
+    width: 25px;
+    height: 25px;
+}
+
+.testimony-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.nametag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    font-size: 0.8em;
+}
+
+.nametag > .description {
     opacity: 50%;
 }
 
-#bot-right > .long-testimony {
-    opacity: 70%;
+.short-testimony {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
