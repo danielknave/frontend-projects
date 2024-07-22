@@ -3,6 +3,7 @@ html {
     font-weight: 500;
     font-style: normal;
     font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
 }
 
 main {
@@ -14,6 +15,16 @@ main {
 
 #vertical {
     flex-basis: 25%;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+}
+
+#vertical > .description {
+    opacity: 50%;
+}
+
+#vertical > .long-testimony {
+    opacity: 70%;
 }
 
 .horizontal {
@@ -31,7 +42,54 @@ main {
     padding: 20px;
 }
 
+#top-left {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}
 
-div {
-    border: 1px solid black;
+#top-left > .description {
+    opacity: 50%;
+}
+
+#top-left > .long-testimony {
+    opacity: 70%;
+}
+
+#top-right {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+#top-right > .description {
+    opacity: 50%;
+}
+
+#top-right > .long-testimony {
+    opacity: 70%;
+}
+
+#bot-left {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+}
+
+#bot-left > .description {
+    opacity: 50%;
+}
+
+#bot-left > .long-testimony {
+    opacity: 70%;
+}
+
+#bot-right {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+#bot-right > .description {
+    opacity: 50%;
+}
+
+#bot-right > .long-testimony {
+    opacity: 70%;
 }
