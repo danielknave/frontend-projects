@@ -18,7 +18,7 @@ main {
 }
 
 #vertical {
-    flex-basis: 25%;
+    flex-basis: 15%;
     background-color: hsl(0, 0%, 100%);
     color: hsl(0, 0%, 0%);
 }
@@ -43,8 +43,8 @@ main {
 
 
 .testimony {
-    padding: 40px;
-    margin: 10px;
+    padding: 35px;
+    margin: 15px;
     border-radius: 8px;
 }
 
