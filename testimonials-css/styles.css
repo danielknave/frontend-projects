@@ -2,7 +2,35 @@ html {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 13px;
 }
+
+main {
+    display: flex;
+    max-width: 88%;
+    max-height: 81%;
+    margin: 0 auto;
+}
+
+#vertical {
+    flex-basis: 25%;
+}
+
+.horizontal {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section, .bottom-section {
+    display: flex;
+}
+
+
+.testimony {
+    padding: 20px;
+}
+
 
 div {
     border: 1px solid black;
