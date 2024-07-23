@@ -4,7 +4,7 @@ function search() {
         alert('Incorrect IP');
         return;
     }  
-    const api_key = "at_Of04vvlo6VltwEQxf6PstIKx8OPF0";
+    const api_key = "";
     const regionalNamesInEnglish = new Intl.DisplayNames(['en'], {type: 'region'});
     $.ajax({
         url: "https://geo.ipify.org/api/v1",
