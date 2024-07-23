@@ -4,28 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IP Tracker</title>
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <script src="scripts.js"></script>
 <body>
     <wrapper class="wrapper">
         <div class="logic">
-            <img src="images/icon-arrow.svg">
             <h3>IP Address Tracker</h3>
             <form>
                 <input type="text" id="ip-input" placeholder="Search for any IP address or domain">
-                <input type="submit" id="ip-submit" value=">">
+                <button type="submit" id="ip-submit"><embed src="images/icon-arrow.svg"></button>
             </form>
             <div class="info">
                 <div id="ip">
-                    <p class="label">IP Address</p>
+                    <p class="label">IP ADDRESS</p>
                     <p class="contents">192.212.174.101</p>
                 </div>
                 <div id="location">
-                    <p class="label">Location</p>
+                    <p class="label">LOCATION</p>
                     <p class="contents">Brooklyn, NY, 10001</p>
                 </div>
                 <div id="timezone">
-                    <p class="label">Timezone</p>
+                    <p class="label">TIMEZONE</p>
                     <p class="contents">UTC -05:00</p>
                 </div>
                 <div id="isp">
