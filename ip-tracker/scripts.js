@@ -24,6 +24,8 @@ function search() {
     })
 }
 
+
+
 function validate(input) {
     const regex = new RegExp(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/);
     return regex.test(input);
