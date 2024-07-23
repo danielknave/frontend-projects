@@ -24,8 +24,10 @@ p {
     z-index: 2;
 }
 
-h3 {
+.title {
     color: white;
+    font-size: 1.5em;
+    margin: 30px;
 }
 
 .info {
@@ -60,6 +62,7 @@ form {
     display: flex;
     width: 550px;
     height: 50px;
+    margin-bottom: 50px;
 }
 
 #ip-input {
