@@ -81,6 +81,11 @@ form {
     border: 0px;
 }
 
+#ip-submit:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 59%);
+}
+
 #map, #map > img {
     width: 100%;
 }
