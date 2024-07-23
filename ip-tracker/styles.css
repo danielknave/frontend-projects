@@ -6,6 +6,10 @@ font-family: "Rubik", sans-serif;
   font-size: 18px;
 }
 
+body {
+    margin: 0;
+}
+
 p {
     margin: 0;
     padding: 0;
@@ -16,12 +20,19 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+h3 {
+    color: white;
 }
 
 .info {
     display: flex;
     width: 80%;
-    border: 1px solid violet; /*to be removed*/
+    background-color: white;
+    border-radius: 10px;
 }
 
 .info > div {
@@ -31,8 +42,6 @@ p {
     margin: 30px;
     padding: 30px;
     flex-basis: 25%;
-
-    border: 1px solid red; /*to be removed*/
 }
 
 .label {
@@ -70,4 +79,17 @@ form {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 0px;
+}
+
+#map, #map > img {
+    width: 100%;
+}
+
+.background-pictures {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
 }
