@@ -70,9 +70,8 @@ form {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: 0px;
-}
-
-#ip-input::placeholder {
+    color: black;
+    font-size: 1em;
     padding: 15px;
 }
 
