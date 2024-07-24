@@ -13,18 +13,39 @@ function search() {
             document.querySelector('#ip .contents').innerText = input;
 
             let locationElement = document.querySelector('#location .contents');
-            locationElement.innerText = data.location.city + ', ' + data.location.region + ', ' + regionalNamesInEnglish.of(data.location.country);
+            let locationText = data.location.city + ', ' + data.location.region + ', ' + regionalNamesInEnglish.of(data.location.country);
+            locationElement.innerText = locationText
 
             let timezoneElement = document.querySelector('#timezone .contents');
             timezoneElement.innerText = 'UTC ' + data.location.timezone;
 
             let ISPElement = document.querySelector('#isp .contents');
             ISPElement.innerText = data.isp;
+
+            draw(locationText, data.location.lat, data.location.lng);
         }
     })
 }
 
+function draw(
+    loc = 'Rosemead, California, United States',
+    x = 34.08057, 
+    y = -118.07285, 
+    z = 13) 
+    {
 
+    let containter = L.DomUtil.get('map');
+    if (containter != null) {
+        containter._leaflet_id = null;
+    }
+    let map = L.map('map').setView([x, y], z);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+         maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    const marker = L.marker([x, y]).addTo(map)
+        .bindPopup('<b>' + loc + '</b>').openPopup();
+}
 
 function validate(input) {
     const regex = new RegExp(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/);
