@@ -45,9 +45,7 @@ function draw(
     }).addTo(map);
     let customIcon = L.icon ({
         iconUrl: 'images/icon-location.svg',
-        iconSize: [38, 45],
-        iconAnchor: [22, 94],
-        popupAnchor: [-3, -76]
+        iconSize: [38, 45]
     });
     const marker = L.marker([x, y], {icon: customIcon}).addTo(map)
         .bindPopup('<b>' + loc + '</b>').openPopup();

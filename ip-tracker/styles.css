@@ -60,7 +60,7 @@ p {
 
 form {
     display: flex;
-    width: 550px;
+    width: 35%;
     height: 50px;
     margin-bottom: 50px;
 }
@@ -100,4 +100,48 @@ form {
     flex-direction: column;
     width: 100%;
     margin: 0;
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bg {
+        height: 400px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info > div {
+        padding: 0;
+        margin-bottom: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    #isp {
+        margin-bottom: 30px;
+    }
+
+    .label {
+        font-size: 0.5em;
+    }
+
+    .contents {
+        font-size: 1em;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    #ip-input {
+        font-size: 0.7em;
+    }
 }
